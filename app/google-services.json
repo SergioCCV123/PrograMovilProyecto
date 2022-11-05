@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "89550311262",
+    "project_id": "proyectoprogramovil-438d4",
+    "storage_bucket": "proyectoprogramovil-438d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89550311262:android:49955a2e298d35a14909cf",
+        "android_client_info": {
+          "package_name": "com.example.proyectoprogramovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89550311262-1d44tup0bm0h9nni7f0n7b8p0dhjggo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChW5GlVUtcN5j4xae1ZxN3wotcy_HDgzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89550311262-1d44tup0bm0h9nni7f0n7b8p0dhjggo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89550311262:android:3897d16aa77769c04909cf",
+        "android_client_info": {
+          "package_name": "com.mycalories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89550311262-1d44tup0bm0h9nni7f0n7b8p0dhjggo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChW5GlVUtcN5j4xae1ZxN3wotcy_HDgzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89550311262-1d44tup0bm0h9nni7f0n7b8p0dhjggo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
