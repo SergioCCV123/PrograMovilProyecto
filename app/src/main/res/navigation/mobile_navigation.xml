@@ -9,17 +9,58 @@
         android:id="@+id/nav_profile"
         android:name="com.mycalories.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_alimento"
+            app:destination="@id/nav_alimento" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.mycalories.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_alimento"
+        android:name="com.mycalories.ui.alimentos.AlimentoFragment"
+        android:label="Alimentos"
+        tools:layout="@layout/fragment_alimento" >
+        <action
+            android:id="@+id/action_nav_alimento_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_alimento_to_addAlimentoFragment2"
+            app:destination="@id/addAlimentoFragment" />
+        <action
+            android:id="@+id/action_nav_alimento_to_updateAlimentoFragment"
+            app:destination="@id/updateAlimentoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.mycalories.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addAlimentoFragment"
+        android:name="com.mycalories.ui.alimentos.AddAlimentoFragment"
+        android:label="fragment_add_alimento"
+        tools:layout="@layout/fragment_add_alimento" >
+        <action
+            android:id="@+id/action_addAlimentoFragment_to_nav_alimento2"
+            app:destination="@id/nav_alimento" />
+        <action
+            android:id="@+id/action_addAlimentoFragment_to_updateAlimentoFragment"
+            app:destination="@id/updateAlimentoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAlimentoFragment"
+        android:name="com.mycalories.ui.alimentos.UpdateAlimentoFragment"
+        android:label="fragment_update_alimento"
+        tools:layout="@layout/fragment_update_alimento" >
+        <argument
+            android:name="alimento"
+            app:argType="com.mycalories.model.Alimento" />
+        <action
+            android:id="@+id/action_updateAlimentoFragment_to_addAlimentoFragment"
+            app:destination="@id/addAlimentoFragment" />
+        <action
+            android:id="@+id/action_updateAlimentoFragment_to_nav_alimento"
+            app:destination="@id/nav_alimento" />
+    </fragment>
 </navigation>

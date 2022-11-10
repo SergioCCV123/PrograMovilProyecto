@@ -23,6 +23,20 @@
     <string name="menu_profile">Mi Perfil</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_alimento">Nombre del alimento</string>
+    <string name="msg_calorias">Cantidad de calorias</string>
+    <string name="bt_add_alimento">Agregar alimento</string>
+    <string name="msg_alimento_added">Alimento agregada</string>
+    <string name="msg_data">Faltan datos</string>
+
+    <string name="bt_update_alimento">Actualizar alimento</string>
+    <string name="msg_alimento_updated">Alimento actualizado</string>
+
+    <string name="bt_delete_alimento">Eliminar alimento</string>
+    <string name="msg_alimento_deleted">Alimento eliminado</string>
+    <string name="msg_pregunta_delete">Esta seguro de eliminar el alimento</string>
+    <string name="msg_si">Si</string>
+    <string name="msg_no">No</string>
 </resources>
