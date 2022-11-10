@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_profile_to_nav_alimento"
             app:destination="@id/nav_alimento" />
+        <action
+            android:id="@+id/action_nav_profile_to_addRutinasFragment"
+            app:destination="@id/addRutinasFragment" />
     </fragment>
 
     <fragment
@@ -62,5 +65,41 @@
         <action
             android:id="@+id/action_updateAlimentoFragment_to_nav_alimento"
             app:destination="@id/nav_alimento" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRutinasFragment"
+        android:name="com.mycalories.ui.rutinas.AddRutinasFragment"
+        android:label="@string/bt_add_rutina"
+        tools:layout="@layout/fragment_add_rutinas" >
+        <action
+            android:id="@+id/action_addRutinasFragment_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_addRutinasFragment_to_rutinasFragment"
+            app:destination="@id/rutinasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateRutinasFragment"
+        android:name="com.mycalories.ui.rutinas.UpdateRutinasFragment"
+        android:label="@string/bt_update_rutina"
+        tools:layout="@layout/fragment_update_rutinas" >
+        <action
+            android:id="@+id/action_updateRutinasFragment_to_rutinasFragment"
+            app:destination="@id/rutinasFragment" />
+        <argument
+            android:name="rutina"
+            app:argType="com.mycalories.model.Rutinas" />
+    </fragment>
+    <fragment
+        android:id="@+id/rutinasFragment"
+        android:name="com.mycalories.ui.rutinas.RutinasFragment"
+        android:label="fragment_rutinas"
+        tools:layout="@layout/fragment_rutinas" >
+        <action
+            android:id="@+id/action_rutinasFragment_to_addRutinasFragment"
+            app:destination="@id/addRutinasFragment" />
+        <action
+            android:id="@+id/action_rutinasFragment_to_updateRutinasFragment"
+            app:destination="@id/updateRutinasFragment" />
     </fragment>
 </navigation>

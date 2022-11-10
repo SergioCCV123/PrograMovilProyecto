@@ -39,4 +39,23 @@
     <string name="msg_pregunta_delete">Esta seguro de eliminar el alimento</string>
     <string name="msg_si">Si</string>
     <string name="msg_no">No</string>
+
+    //Rutinas
+
+    <string name="msg_rutina">Nombre de la rutina</string>
+    <string name="msg_ejeryreps">Especificaciones de la rutina</string>
+    <string name="msg_reposo">Tiempo de descanso</string>
+    <string name="bt_add_rutina">Agregar Rutina</string>
+    <string name="msg_rutina_added">Rutina Agregada</string>
+
+    <string name="bt_update_rutina">Actualizar Rutina</string>
+    <string name="msg_rutina_updated">Rutina Actualizada</string>
+    <string name="bt_delete_rutina">Eliminar Rutina</string>
+    <string name="msg_rutina_deleted">Rutina Eliminado</string>
+    <string name="msg_preguntaR_deleted">Está seguro de querer eliminar la rutina?</string>
+
+
+
+
+
 </resources>
