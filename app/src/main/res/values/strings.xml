@@ -54,7 +54,19 @@
     <string name="msg_rutina_deleted">Rutina Eliminado</string>
     <string name="msg_preguntaR_deleted">Está seguro de querer eliminar la rutina?</string>
 
+    //Recetas
 
+    <string name="msg_nombrereceta">Nombre de la Receta</string>
+    <string name="msg_receta">¿Que lleva la receta?</string>
+    <string name="bt_add_receta">Agregar receta</string>
+    <string name="msg_receta_added">Receta agregada</string>
+
+    <string name="bt_update_receta">Actualizar receta</string>
+    <string name="msg_receta_updated">Receta actualizado</string>
+
+    <string name="bt_delete_receta">Eliminar receta</string>
+    <string name="msg_receta_deleted">Receta eliminado</string>
+    <string name="msg_preguntaRe_delete">Esta seguro de eliminar la receta</string>
 
 
 

@@ -102,4 +102,34 @@
             android:id="@+id/action_rutinasFragment_to_updateRutinasFragment"
             app:destination="@id/updateRutinasFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addRecetaFragment"
+        android:name="com.example.recetas.ui.receta.AddRecetaFragment"
+        android:label="AddRecetaFragment" >
+        <action
+            android:id="@+id/action_addRecetaFragment_to_nav_receta"
+            app:destination="@id/nav_receta" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateRecetaFragment"
+        android:name="com.example.recetas.ui.receta.UpdateRecetaFragment"
+        android:label="UpdateRecetaFragment" >
+        <action
+            android:id="@+id/action_updateRecetaFragment_to_nav_receta"
+            app:destination="@id/nav_receta" />
+        <argument
+            android:name="receta"
+            app:argType="com.mycalories.model.Receta" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_receta"
+        android:name="com.example.recetas.ui.receta.RecetaFragment"
+        android:label="RecetaFragment" >
+        <action
+            android:id="@+id/action_nav_receta_to_addRecetaFragment"
+            app:destination="@id/addRecetaFragment" />
+        <action
+            android:id="@+id/action_nav_receta_to_updateRecetaFragment"
+            app:destination="@id/updateRecetaFragment" />
+    </fragment>
 </navigation>
