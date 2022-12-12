@@ -1,4 +1,4 @@
-package com.example.recetas.ui.receta
+package com.mycalories.ui.receta
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.recetas.R
-import com.example.recetas.databinding.FragmentAddRecetaBinding
-import com.example.recetas.model.Receta
-import com.example.recetas.viewmodel.RecetaViewModel
+import com.mycalories.R
+import com.mycalories.databinding.FragmentAddRecetaBinding
+import com.mycalories.model.Receta
+import com.mycalories.viewmodel.RecetaViewModel
 
 
 class AddRecetaFragment : Fragment(){

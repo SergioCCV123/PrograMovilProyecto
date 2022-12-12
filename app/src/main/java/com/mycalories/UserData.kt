@@ -1,19 +1,22 @@
 package com.mycalories
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.mycalories.databinding.ActivityUserDataBinding
 import com.mycalories.model.Usuario
 import com.mycalories.viewmodel.UsuarioViewModel
+import kotlin.system.exitProcess
 
 class UserData : AppCompatActivity() {
 
     private lateinit var binding: ActivityUserDataBinding
     private lateinit var usuarioViewModel: UsuarioViewModel
+    private lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,5 +47,14 @@ class UserData : AppCompatActivity() {
 
     public override fun onStart(){
         super.onStart()
+    }
+
+    override fun onBackPressed() {
+        if(FirebaseAuth.getInstance().currentUser!=null){
+            FirebaseAuth.getInstance().currentUser!!.delete().addOnSuccessListener {
+                this@UserData.finish()
+                exitProcess(0)
+            }
+        }
     }
 }

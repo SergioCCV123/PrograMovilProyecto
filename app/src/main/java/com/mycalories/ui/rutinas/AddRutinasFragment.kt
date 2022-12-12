@@ -50,7 +50,7 @@ class AddRutinasFragment : Fragment() {
             rutinasViewModel.saveRutinas(rutina)
             Toast.makeText(requireContext(),getString(R.string.msg_rutina_added),Toast.LENGTH_SHORT).show()
 
-            findNavController().navigate(R.id.action_addRutinasFragment_to_nav_profile)
+            findNavController().navigate(R.id.action_addRutinasFragment_to_nav_home)
         }else{
             Toast.makeText(requireContext(),getString(R.string.msg_data), Toast.LENGTH_LONG).show()
         }

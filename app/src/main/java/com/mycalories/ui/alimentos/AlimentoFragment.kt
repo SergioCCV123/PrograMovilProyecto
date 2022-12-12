@@ -29,7 +29,7 @@ class AlimentoFragment : Fragment() {
         _binding = FragmentAlimentoBinding.inflate(inflater, container, false)
 
         binding.addAlimentoFabButton.setOnClickListener{
-            findNavController().navigate(R.id.action_nav_alimento_to_addAlimentoFragment2)
+            findNavController().navigate(R.id.action_nav_alimento_to_addAlimentoFragment)
         }
 
         //se genera el recicler view para ver la informacion

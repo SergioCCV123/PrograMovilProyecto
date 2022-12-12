@@ -47,7 +47,7 @@ class AddAlimentoFragment : Fragment(){
             alimentoViewModel.saveAlimento(alimento)
             Toast.makeText(requireContext(),getString(R.string.msg_alimento_added), Toast.LENGTH_SHORT).show()
 
-            findNavController().navigate(R.id.action_addAlimentoFragment_to_nav_alimento2)
+            findNavController().navigate(R.id.action_addAlimentoFragment_to_nav_alimento)
         }else{
             Toast.makeText(requireContext(),getString(R.string.msg_data), Toast.LENGTH_LONG).show()
         }

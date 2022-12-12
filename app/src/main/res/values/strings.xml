@@ -67,7 +67,7 @@
     <string name="bt_delete_receta">Eliminar receta</string>
     <string name="msg_receta_deleted">Receta eliminado</string>
     <string name="msg_preguntaRe_delete">Esta seguro de eliminar la receta</string>
-
+    <string name="menu_home">Inicio</string>
 
 
 </resources>

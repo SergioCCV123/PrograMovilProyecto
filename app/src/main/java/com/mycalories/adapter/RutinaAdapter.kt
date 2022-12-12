@@ -10,7 +10,6 @@ import com.mycalories.databinding.RutinaFilaBinding
 import com.mycalories.model.Alimento
 import com.mycalories.model.Rutinas
 import com.mycalories.ui.alimentos.AlimentoFragmentDirections
-import com.mycalories.ui.rutinas.AddRutinasFragmentDirections
 import com.mycalories.ui.rutinas.RutinasFragmentDirections
 
 class RutinaAdapter : RecyclerView.Adapter<RutinaAdapter.RutinaViewHolder>() {

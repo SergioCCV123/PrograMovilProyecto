@@ -2,11 +2,12 @@ package com.mycalories.data
 
 import android.content.Context
 import androidx.room.Database
-import androidx.room.*
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import com.mycalories.model.Rutinas
 
 @Database(entities = [Rutinas::class], version = 1, exportSchema = false)
-abstract class RutinasDatabase:RoomDatabase() {
+abstract class RutinasDatabase : RoomDatabase(){
 
     abstract fun rutinasDao() : RutinaDao
 
@@ -23,11 +24,12 @@ abstract class RutinasDatabase:RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     RutinasDatabase::class.java,
-                    "rutinas_database"
+                    "rutina_database"
                 ).allowMainThreadQueries().build()
                 INSTANCE = instance
                 return instance
             }
         }
     }
+
 }
