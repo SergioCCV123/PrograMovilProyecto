@@ -29,7 +29,7 @@ class RutinasFragment : Fragment() {
         _binding = FragmentRutinasBinding.inflate(inflater, container, false)
 
         binding.addRutinasFabButton.setOnClickListener{
-            findNavController().navigate(R.id.action_nav_alimento_to_addAlimentoFragment)
+            findNavController().navigate(R.id.action_rutinasFragment_to_addRutinasFragment)
         }
 
 

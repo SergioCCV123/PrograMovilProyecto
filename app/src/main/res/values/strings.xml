@@ -68,6 +68,22 @@
     <string name="msg_receta_deleted">Receta eliminado</string>
     <string name="msg_preguntaRe_delete">Esta seguro de eliminar la receta</string>
     <string name="menu_home">Inicio</string>
+    <string name="alimentos">Alimentos</string>
+    <string name="recipe">Recetas</string>
+    <string name="rutina">Rutinas</string>
+    <string name="msg_nombre">Nombre</string>
+    <string name="msg_telefono">Telefono</string>
+    <string name="bt_add_Restaurante">Añadir restaurante</string>
+    <string name="tv_latitud_lb">Latitud</string>
+    <string name="tv_longitud_lb">Longitud</string>
+    <string name="tv_altura_lb">Altura</string>
+    <string name="msg_restaurante_Added">Restaurante añadido</string>
+    <string name="bt_update_Restaurante">Actualizar restaurante</string>
+    <string name="bt_delete_Restaurante">Eliminar Restaurante</string>
+    <string name="msg_preguntaRestaurant_delete">Esta seguro que desea eliminar el restaurante</string>
+    <string name="restaurante">Restaurantes</string>
+    <string name="msg_phone_call">Realizar llamada telefonica</string>
+    <string name="mycalories">MY CALORIES</string>
 
 
 </resources>

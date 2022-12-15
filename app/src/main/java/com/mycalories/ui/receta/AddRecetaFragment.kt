@@ -18,7 +18,6 @@ class AddRecetaFragment : Fragment(){
 
     //objeto que interactua con la tabla
     private  lateinit var recetaViewModel: RecetaViewModel
-
     private var _binding: FragmentAddRecetaBinding? = null
     private val binding get() = _binding!!
 
@@ -48,7 +47,7 @@ class AddRecetaFragment : Fragment(){
             recetaViewModel.saveReceta(receta)
             Toast.makeText(requireContext(),getString(R.string.msg_receta_added), Toast.LENGTH_SHORT).show()
 
-            findNavController().navigate(R.id.action_nav_receta_to_addRecetaFragment)
+            findNavController().navigate(R.id.action_addRecetaFragment_to_nav_receta)
         }else{
             Toast.makeText(requireContext(),getString(R.string.msg_data), Toast.LENGTH_LONG).show()
         }

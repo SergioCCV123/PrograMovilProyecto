@@ -26,17 +26,15 @@
         <action
             android:id="@+id/action_nav_alimento_to_updateAlimentoFragment"
             app:destination="@id/updateAlimentoFragment" />
+        <action
+            android:id="@+id/action_nav_alimento_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.mycalories.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
         android:id="@+id/addAlimentoFragment"
         android:name="com.mycalories.ui.alimentos.AddAlimentoFragment"
-        android:label="fragment_add_alimento"
+        android:label="Añadir Alimentos"
         tools:layout="@layout/fragment_add_alimento" >
         <action
             android:id="@+id/action_addAlimentoFragment_to_nav_alimento"
@@ -45,7 +43,7 @@
     <fragment
         android:id="@+id/updateAlimentoFragment"
         android:name="com.mycalories.ui.alimentos.UpdateAlimentoFragment"
-        android:label="fragment_update_alimento"
+        android:label="Actualizar alimentos"
         tools:layout="@layout/fragment_update_alimento" >
         <argument
             android:name="alimento"
@@ -61,7 +59,7 @@
         tools:layout="@layout/fragment_add_rutinas" >
         <action
             android:id="@+id/action_addRutinasFragment_to_rutinasFragment"
-            app:destination="@id/rutinasFragment" />
+            app:destination="@id/nav_rutinas" />
         <action
             android:id="@+id/action_addRutinasFragment_to_nav_home"
             app:destination="@id/nav_home" />
@@ -76,12 +74,12 @@
             app:argType="com.mycalories.model.Rutinas" />
         <action
             android:id="@+id/action_updateRutinasFragment_to_rutinasFragment"
-            app:destination="@id/rutinasFragment" />
+            app:destination="@id/nav_rutinas" />
     </fragment>
     <fragment
-        android:id="@+id/rutinasFragment"
+        android:id="@+id/nav_rutinas"
         android:name="com.mycalories.ui.rutinas.RutinasFragment"
-        android:label="fragment_rutinas"
+        android:label="Rutinas"
         tools:layout="@layout/fragment_rutinas" >
         <action
             android:id="@+id/action_rutinasFragment_to_addRutinasFragment"
@@ -89,11 +87,14 @@
         <action
             android:id="@+id/action_rutinasFragment_to_updateRutinasFragment"
             app:destination="@id/updateRutinasFragment" />
+        <action
+            android:id="@+id/action_nav_rutinas_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/addRecetaFragment"
-        android:name="com.example.recetas.ui.receta.AddRecetaFragment"
-        android:label="AddRecetaFragment" >
+        android:name="com.mycalories.ui.receta.AddRecetaFragment"
+        android:label="Añadir Receta" >
         <action
             android:id="@+id/action_addRecetaFragment_to_nav_receta"
             app:destination="@id/nav_receta" />
@@ -101,7 +102,7 @@
     <fragment
         android:id="@+id/updateRecetaFragment"
         android:name="com.example.recetas.ui.receta.UpdateRecetaFragment"
-        android:label="UpdateRecetaFragment" >
+        android:label="Actualizar receta" >
         <argument
             android:name="receta"
             app:argType="com.mycalories.model.Receta" />
@@ -112,13 +113,16 @@
     <fragment
         android:id="@+id/nav_receta"
         android:name="com.example.recetas.ui.receta.RecetaFragment"
-        android:label="RecetaFragment" >
+        android:label="Recetas" >
         <action
             android:id="@+id/action_nav_receta_to_addRecetaFragment"
             app:destination="@id/addRecetaFragment" />
         <action
             android:id="@+id/action_nav_receta_to_updateRecetaFragment"
             app:destination="@id/updateRecetaFragment" />
+        <action
+            android:id="@+id/action_nav_receta_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/nav_home"
@@ -131,6 +135,18 @@
         <action
             android:id="@+id/action_nav_home_to_newsViewFragment"
             app:destination="@id/newsViewFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_alimento"
+            app:destination="@id/nav_alimento" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_receta"
+            app:destination="@id/nav_receta" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_restaurantes"
+            app:destination="@id/nav_restaurantes" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_restaurantes2"
+            app:destination="@id/nav_restaurantes" />
     </fragment>
     <fragment
         android:id="@+id/newsViewFragment"
@@ -143,5 +159,44 @@
         <argument
             android:name="homepage"
             app:argType="com.mycalories.model.Homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_restaurantes"
+        android:name="com.mycalories.ui.restaurantes.RestaurantesFragment"
+        android:label="Restaurantes"
+        tools:layout="@layout/fragment_restaurantes" >
+        <action
+            android:id="@+id/action_nav_restaurantes_to_addRestauranteFragment"
+            app:destination="@id/addRestauranteFragment" />
+        <action
+            android:id="@+id/action_nav_restaurantes_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_restaurantes_to_updateRestauranteFragment"
+            app:destination="@id/updateRestauranteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRestauranteFragment"
+        android:name="com.mycalories.ui.restaurantes.AddRestauranteFragment"
+        android:label="Añadir restaurante"
+        tools:layout="@layout/fragment_add_restaurante" >
+        <action
+            android:id="@+id/action_addRestauranteFragment_to_nav_restaurantes"
+            app:destination="@id/nav_restaurantes" />
+        <action
+            android:id="@+id/action_addRestauranteFragment_to_nav_restaurantes2"
+            app:destination="@id/nav_restaurantes" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateRestauranteFragment"
+        android:name="com.mycalories.ui.restaurantes.UpdateRestauranteFragment"
+        android:label="Actualizar restaurante"
+        tools:layout="@layout/fragment_update_restaurante" >
+        <action
+            android:id="@+id/action_updateRestauranteFragment_to_nav_restaurantes"
+            app:destination="@id/nav_restaurantes" />
+        <argument
+            android:name="restaurante"
+            app:argType="com.mycalories.model.Restaurante" />
     </fragment>
 </navigation>

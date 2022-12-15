@@ -24,6 +24,7 @@ class PrincipalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         binding = ActivityPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -38,7 +39,7 @@ class PrincipalActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_profile, R.id.nav_alimento, R.id.nav_slideshow
+                R.id.nav_home, R.id.nav_profile, R.id.nav_alimento, R.id.nav_receta, R.id.nav_rutinas, R.id.nav_restaurantes
             ), drawerLayout
         )
         actionBar.setupWithNavController(navController, appBarConfiguration)

@@ -14,11 +14,19 @@
             android:title="@string/menu_profile" />
         <item
             android:id="@+id/nav_alimento"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Alimentos"/>
+            android:icon="@drawable/ic_food"
+            android:title="@string/alimentos"/>
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_receta"
+            android:icon="@drawable/ic_recipe"
+            android:title="@string/recipe" />
+        <item
+            android:id="@+id/nav_rutinas"
+            android:icon="@drawable/ic_rutina"
+            android:title="@string/rutina" />
+        <item
+            android:id="@+id/nav_restaurantes"
+            android:icon="@drawable/ic_restaurant"
+            android:title="@string/restaurante" />
     </group>
 </menu>
